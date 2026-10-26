@@ -10,7 +10,7 @@ WINCHER의 하이브리드 윈치 제어기는 ESP32 환경에서 슬라이딩�
 ---
 파일 가이드
 <br><br>
-1. **final_esp32_winch_control_1/2_smc_flutter*
+1. **final_esp32_winch_control_1/2_smc_flutter**
  
    platformio.ini
    
@@ -28,7 +28,7 @@ Vscode PlatformIO 환경에서 Espressif ESP32 Dev Module를 빌드 후 위 파�
 
 1번과 2번의 코드는 통신 ID를 제외하면 완전히 똑같은 코드입니다.
 
-시연장에서 두 제어기로 제어/비제어 비교를 시연할 예정입니다.
+시연장에서 두 제어기로 제어/비제어를 비교 시연할 예정입니다.
 
 <br><br>
 2. **mini_eps32c3_winch_payload**
