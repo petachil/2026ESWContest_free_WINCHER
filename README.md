@@ -10,7 +10,7 @@ WINCHER의 하이브리드 윈치 제어기는 ESP32 환경에서 슬라이딩�
 ---
 파일 가이드
 <br><br>
-1. **final_esp32_winch_control_1/2_smc_flutter**
+1. **final_release_esp32_winch_control**
  
    platformio.ini
    
@@ -26,12 +26,12 @@ Vscode PlatformIO 환경에서 Espressif ESP32 Dev Module를 빌드 후 위 파�
 
 메인 ESP32로 페이로드의 각도, 사용자의 임무 지령 등 모든 정보를 종합하여 모터를 제어합니다.
 
-1번과 2번의 코드는 통신 ID를 제외하면 완전히 똑같은 코드입니다.
+시연장에서 2개의 제어기로 제어/비제어를 비교 시연할 예정입니다.
 
-시연장에서 두 제어기로 제어/비제어를 비교 시연할 예정입니다.
+두 제어기 모두 동일한 코드를 사용하며 WINCH_ID 만 변경합니다.
 
 <br><br>
-2. **mini_eps32c3_winch_payload**
+2. **final_release_mini_eps32c3_winch_payload**
 
    platformio.ini
    
@@ -44,6 +44,8 @@ Vscode PlatformIO 환경에서 Espressif ESP32 Dev Module를 빌드 후 위 파�
 Vscode PlatformIO 환경에서  Seeed Studio XIAO ESP32C3를 빌드 후 위 파일을 덮어씁니다.
 
 페이로드에 장착된 서브 EPS32C3으로 페이로드의 각도를 측정하여 메인 ESP32로 전송합니다.
+
+두 제어기에 종속된 EPS32C3 모두 동일한 코드를 사용하며 MAC 주소만 변경합니다.
 
 <br><br>
 3. **final_winch_gui_1.py**
@@ -62,7 +64,7 @@ VScode 환경에서 Jupyter Notebook으로 실행합니다.
 윈치 실시간 동작에 관여하지 않으며, ESP32 tinyML 모델 학습을 위한 파일입니다.
 
 <br><br>
-5. **data_analyzer_final_smc_fortest5_flutter.py**
+5. **final_release_data_analyzer.py**
 
 VScode 환경에서 파이썬 파일을 실행합니다. 
 
@@ -80,7 +82,7 @@ VScode 환경에서 파이썬 파일을 실행합니다.
    
    보고서 부록3입니다.
 
-   최종 평가에 측정한 24개의 임무의 개별 데이터와 그래프가 담겨있습니다.
+   최종 평가에 측정한 24개의 임무의 개별 분석지표와 그래프가 담겨있습니다.
 
 <br><br> 
 8. **appendix4_winch_log.zip**
